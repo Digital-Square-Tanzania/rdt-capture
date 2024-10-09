@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
-apply plugin: 'com.jfrog.bintray'
 
 group = "io.ona.rdt-capture"
 version = '0.1.1'
@@ -50,37 +49,6 @@ android {
                     }
                 }
             }
-        }
-    }
-}
-
-
-bintray {
-    // Get Bintray credentials from environment variables
-    user = System.getenv('BINTRAY_USER') // Get bintray User
-    key = System.getenv('BINTRAY_KEY') // Get bintray Secret Key
-    configurations = ['archives']
-    pkg {
-        repo = 'rdt-capture'
-        name = project.name
-        userOrg = 'ona'
-        licenses = ['Apache-2.0']
-        desc = 'OpenCV Library'
-        websiteUrl = "https://ona.io"
-        publish = true
-        vcsUrl = "https://github.com/onaio/rdt-capture"
-        version {
-            name = this.version
-            desc = "OpenCV Library ${this.version}"
-            released = new Date()
-            vcsTag = this.version
-        }
-    }
-    publications = ['OpenCVLib']
-
-    android {
-        lintOptions {
-            abortOnError false
         }
     }
 }
