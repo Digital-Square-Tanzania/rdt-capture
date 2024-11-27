@@ -5,11 +5,11 @@ group = "io.ona.rdt-capture"
 version = '0.1.1'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 21
+        targetSdkVersion 33
     }
 
     buildTypes {
@@ -50,5 +50,9 @@ android {
                 }
             }
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }

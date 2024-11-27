@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.835" />
 
-    <edu.washington.cs.ubicomplab.rdt_reader.Viewport
+    <edu.washington.cs.ubicomplab.rdt_reader.views.ViewportUsingBitmap
         android:id="@+id/viewport"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -61,22 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/gray_overlay"
-        android:padding="16dp"
-        app:animationType="Line"
-        app:doneCircleColor="@color/colorPrimary"
-        app:doneCircleRadius="12dp"
-        app:doneStepLineColor="@color/colorPrimary"
-        app:doneStepMarkColor="@color/colorWhite"
-        app:nextStepLineColor="@color/colorPrimary"
-        app:nextTextColor="@color/colorPrimary"
-        app:selectedCircleColor="@color/colorPrimary"
-        app:selectedCircleRadius="12dp"
-        app:selectedStepNumberColor="@color/colorWhite"
-        app:selectedTextColor="@color/colorPrimary"
-        app:stepLineWidth="1dp"
-        app:stepNumberTextSize="12sp"
-        app:stepPadding="4dp"
-        app:stepViewStyle="@style/StepView" />
+        android:padding="16dp" />
 
 
 </android.support.constraint.ConstraintLayout>
