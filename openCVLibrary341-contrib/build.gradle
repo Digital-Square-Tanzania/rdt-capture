@@ -39,7 +39,7 @@ android {
                 artifact("$buildDir/outputs/aar/openCVLibrary341-contrib-release.aar")
                 artifact(sourceJar)
                 groupId this.group
-                artifactId 'openCVLibrary341-contrib'
+                artifactId 'opencvlibrary341-contrib'
                 version this.version
 
                 //The publication doesn't know about our dependencies, so we have to manually add them to the pom
@@ -63,7 +63,7 @@ android {
                  ** Replace GITHUB_USERID with your/organisation Github userID
                  ** and REPOSITORY with the repository name on GitHub
                  */
-                url = uri("https://github.com/Digital-Square-Tanzania/rdt-capture.git")
+                url = uri("https://maven.pkg.github.com/Digital-Square-Tanzania/rdt-capture")
                 credentials {
                     /** Create github.properties in root project folder file with
                      ** gpr.usr=GITHUB_USER_ID & gpr.key=PERSONAL_ACCESS_TOKEN
